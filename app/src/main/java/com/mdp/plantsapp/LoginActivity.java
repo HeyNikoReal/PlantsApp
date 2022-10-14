@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 Toast.makeText(LoginActivity.this, "Anda Berhasil Login", Toast.LENGTH_SHORT).show();
 
-                Uri webPage = Uri.parse("https://plantsapp.com");
+                Uri webPage = Uri.parse("https://simponi2.co.id");
                 Intent intent = new Intent(Intent.ACTION_VIEW, webPage);
                 startActivity(intent);
 
