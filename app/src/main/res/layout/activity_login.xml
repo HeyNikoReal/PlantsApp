@@ -7,50 +7,47 @@
     android:background="@drawable/activity2"
     tools:context=".LoginActivity">
 
-   <com.google.android.material.button.MaterialButton
-       android:id="@+id/btn_login"
-       android:layout_width="match_parent"
-       android:padding="10dp"
-       android:layout_marginStart="30dp"
-       android:layout_marginEnd="30dp"
-       android:layout_marginBottom="16dp"
-       android:layout_marginHorizontal="16dp"
-       android:backgroundTint="#1B5E20"
-       android:textSize = "17sp"
-       android:textAllCaps="false"
-       android:layout_height="wrap_content"
-       app:layout_constraintBottom_toTopOf="@id/tv_signgup"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       android:text="Login"
-       app:cornerRadius="20dp"
-/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1B5E20"
+        android:padding="10dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_signgup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Remember me"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:drawableStart="@drawable/ic_check_circle_24"
         android:drawableTint="#1B5E20"
-        app:layout_constraintTop_toBottomOf="@id/et_password"
-    />
+        android:text="Remember me"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
 
 
     <TextView
         android:id="@+id/tv_lupa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forgot Password?"
         android:layout_marginStart="240dp"
-        android:textColor="#1B5E20"
         android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Forgot Password?"
+        android:textColor="#1B5E20"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_password"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
 
     <TextView
         android:id="@+id/tv_signgup"
@@ -64,77 +61,74 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-    android:id="@+id/et_password"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="16dp"
-    app:layout_constraintBottom_toTopOf="@id/btn_login"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    android:inputType="textPassword"
-    android:drawableStart="@drawable/ic_lock_24"
-    android:drawableTint="#1B5E20"
-    android:backgroundTint="#25424242"
-    android:background="@drawable/bg_corner"
-    android:padding="10dp"
-    android:drawablePadding="8dp"
-    android:layout_marginStart="30dp"
-    android:layout_marginEnd="30dp"
-    android:layout_marginBottom="80dp"
-    android:hint="•••••••••••"
-    android:textSize="20sp"
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="#25424242"
+        android:drawableStart="@drawable/ic_lock_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="#1B5E20"
+        android:hint="•••••••••••"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
 
-    />
+        />
 
     <EditText
         android:id="@+id/et_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        app:layout_constraintBottom_toTopOf="@id/et_password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:inputType="text"
-        android:drawableStart="@drawable/ic_person_24"
-        android:backgroundTint="#25424242"
-        android:padding="12dp"
-        android:drawableTint="#1B5E20"
-        android:drawablePadding="8dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="20dp"
-        android:hint="Full Name"
-        android:textColor="#1B5E20"
         android:background="@drawable/bg_corner"
-        />
+        android:backgroundTint="#25424242"
+        android:drawableStart="@drawable/ic_person_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="#1B5E20"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="#1B5E20"
+        app:layout_constraintBottom_toTopOf="@id/et_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-<TextView
-    android:id="@+id/tv_login"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Login to your account"
-    app:layout_constraintBottom_toTopOf="@id/et_username"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    android:textStyle="bold"
-    android:layout_marginBottom="40dp"
-    android:textSize="15sp"
-    android:letterSpacing="0.09"
-    />
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:letterSpacing="0.09"
+        android:text="Login to your account"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/et_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome back"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@id/tv_login"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Welcome back"
+        android:textColor="#1B5E20"
         android:textSize="35sp"
         android:textStyle="bold"
-        android:textColor="#1B5E20"
-        />
+        app:layout_constraintBottom_toTopOf="@id/tv_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

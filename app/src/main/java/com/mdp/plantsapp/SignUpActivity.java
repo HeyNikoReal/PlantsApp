@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class SignUpActivity extends AppCompatActivity {
 
     private Button signups;
-    private EditText etnama,etpass,etconpass,etemail;
+    private EditText etnama, etpass, etconpass, etemail;
 
 
     @Override
@@ -31,7 +31,7 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String nama,pass,email,conpass;
+                String nama, pass, email, conpass;
 
                 nama = etnama.getText().toString();
                 pass = etpass.getText().toString();
@@ -39,34 +39,27 @@ public class SignUpActivity extends AppCompatActivity {
                 conpass = etconpass.getText().toString();
 
 
-                if(nama.trim().equals(""))
-                {
+                if (nama.trim().equals("")) {
                     etnama.setError("Nama tidak boleh kosong");
                     return;
                 }
 
-                if(email.trim().equals(""))
-                {
+                if (email.trim().equals("")) {
                     etemail.setError("Email tidak boleh kosong");
                     return;
                 }
 
-                if(pass.trim().equals(""))
-                {
+                if (pass.trim().equals("")) {
                     etpass.setError("Password tidak boleh kosong");
                     return;
                 }
 
-                if(conpass.trim().equals(pass.trim()))
-                {
+                if (conpass.trim().equals(pass.trim())) {
                     Toast.makeText(SignUpActivity.this, "Anda Berhasil Sign Up", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
+                    Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                     startActivity(intent);
 
-                }
-
-                else
-                {
+                } else {
                     etconpass.setError("Confirm Password harus sama dengan Password");
                     return;
                 }

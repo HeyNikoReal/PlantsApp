@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
 
     private Button simponi;
-    private EditText etnama,etpass;
+    private EditText etnama, etpass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +28,17 @@ public class LoginActivity extends AppCompatActivity {
         simponi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String nama,pass;
+                String nama, pass;
 
                 nama = etnama.getText().toString();
                 pass = etpass.getText().toString();
 
-                if(nama.trim().equals(""))
-                {
+                if (nama.trim().equals("")) {
                     etnama.setError("Nama tidak boleh kosong");
                     return;
                 }
 
-                if(pass.trim().equals(""))
-                {
+                if (pass.trim().equals("")) {
                     etpass.setError("Password tidak boleh kosong");
                     return;
                 }
@@ -54,9 +52,7 @@ public class LoginActivity extends AppCompatActivity {
             }
 
 
-
         });
-
 
 
     }
